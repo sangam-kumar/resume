@@ -1,108 +1,144 @@
-<html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Sangam Kumar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            background-color: #fff;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.3em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 1px solid #ddd;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 0.3em;
+            font-weight: normal;
+        }
+        .section {
+            margin-bottom: 1.5em;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #666;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 0.7em;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills div {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sangam Kumar</h1>
+        <p class="contact-info">
+            Phone: <a href="tel:+91846504109">(+91) 84650 4109</a> | 
+            Email: <a href="mailto:sangamkumar2000@gmail.com">sangamkumar2000@gmail.com</a> | 
+            <a href="https://linkedin.com/in/sangam-kumar">LinkedIn</a> | 
+            <a href="https://github.com/sangam-kumar">GitHub</a>
+        </p>
 
-        <head>
+        <div class="section">
+            <h2>Experience</h2>
 
-                <link href="style.css" rel ="stylesheet">
+            <h3>NowFloats | Software Engineer</h3>
+            <p><i>May 2023 - Current | Hyderabad</i></p>
+            <ul>
+                <li>Engineered an Azure service, utilizing caching strategies to reduce query operations that generate SEO-optimized sitemaps for over 16,000+ customer websites, notably enhancing indexing and ranking capabilities.</li>
+                <li>Revitalized middleware to fine-tune robot.txt delivery, for modulating crawler traffic and resource utilization.</li>
+                <li>Designed and implemented dynamic REST APIs based on reusable factory patterns to facilitate configurable product mixes across individualized storefronts.</li>
+                <li>Contributed to codebase improvements by refactoring and transitioning sections from monolithic to a microservices architecture for enhanced scalability and maintainability.</li>
+                <li>Diligently documented processes and configurations ensuring clarity and knowledge transfers within the team.</li>
+                <li>Integrated 3rd party APIs, enhancing functionality through collaborative cross-team efforts and ongoing discussions with external partners for iterative improvements.</li>
+                <li>Utilized Azure Kubernetes Services to configure Metabase and hosted it through Application Gateway by setting up load balancer and ingress controller for efficient load distribution and seamless deployment.</li>
+                <li>Established robust message queues between two internal services, improving load handling and reducing database load and network throttling.</li>
+                <li>Systematically addressed and remediated OWASP risks by implementing robust input validation and parameterized queries to mitigate SQL injection threats, fortifying the application against potential vulnerabilities, ensuring a resilient and secure backend infrastructure.</li>
+            </ul>
 
-                <title>
-                    StrangeQu
-                </title>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        </head>
+            <h3>Phoenix Global | Developer Intern</h3>
+            <p><i>Mar 2022 - Sep 2022 | Remote</i></p>
+            <ul>
+                <li>Designed, developed, and maintained backend APIs using Django, ensuring efficient data flow and seamless integration with front-end components.</li>
+                <li>Leveraged CloudFront for content delivery, reducing latency and improving overall user experience.</li>
+                <li>Managed DNS configurations with Route 53, ensuring seamless and reliable service discovery.</li>
+            </ul>
+        </div>
 
-        <body>
-                <header id="header">
-                    <!-- resume header with my name and title-->
-                    <h1><b>sangam</b> KUMAR</h1>
-                    <hr>
-                    Undergradute in Computer Science
-                    <hr>
-                </header>
-                <main>
-                        <article id="mainLeft">
+        <div class="section">
+            <h2>Projects</h2>
 
-                            <section>
+            <h3><a href="https://sangam-kumar-credit-scoring-application-application-pxbost.streamlit.app">Credit Scoring Using Machine Learning</a></h3>
+            <ul>
+                <li>Developed a Python credit scoring system using TensorFlow, Scikit-Learn, and Pandas, achieving 85% accuracy with KNN, SVM, Logistic Regression, and ANN algorithms. Deployed on Streamlit for a user-friendly web dashboard and real-time credit score generation.</li>
+            </ul>
 
-                                <h2>CONTACT</h2>
+            <h3>URL Shortener</h3>
+            <ul>
+                <li>Crafted a Django-based URL shortener using NanoID for 128 to 7-character string conversion. Leveraged MongoDB for efficient data storage and retrieval within the application.</li>
+            </ul>
+        </div>
 
-                                <p>
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    <a href="mailto:sangamkumar2000@gmail.com">Mail</a>
-                                </p>
-                                
-                                <p>
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                    <a href="github.com/sangam-kumar">Github</a>
-                                </p>
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div><strong>Programming Languages:</strong> C#, Python, C</div>
+                <div><strong>Frameworks and Databases:</strong> .NET, Django, MySQL, MongoDB, Redis</div>
+                <div><strong>Machine Learning:</strong> TensorFlow, Numpy, Scikit-Learn, pandas, matplotlib, seaborn</div>
+                <div><strong>Tools and Platforms:</strong> Git, Linux, Bash, AWS, Azure</div>
+            </div>
+        </div>
 
-                                <p>
-                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                                    <a href="linkedin.com/in/sangam-kumar/">LinkedIn</a>
-                                </p>
-                                
-                            </section>
+        <div class="section">
+            <h2>Education</h2>
 
-                            <section>
-
-                                <h2>SKILLS</h2>
-
-                                <p>Adapt Improvise Overcome </p>
-
-                            </section>
-
-                            <section>
-
-                                <h2>EDUCATION</h2>
-
-                                <b>Master Of Living</b>
-
-                                <p>
-                                    School Of Life
-                                </p>
-
-                                <p>
-                                    2000-2022
-                                </p>
-
-                            </section>
-
-                        </article>
-
-                        <article id=""mainRight'>
-
-                            <section>
-
-                                <h2>ABOUT</h2>
-                                <p>The only thing of significance that I know is I don't know enough.</p>
-
-                            </section>
-                            
-                            <section>
-                            
-                                <h2>WORK EXPERIENCE</h2>
-                            
-                                <h3><b>Computer Scientist</b></h3>
-                            
-                                <p>
-                                        YO | 2000 - 2022
-                                </p>
-                            
-                                <p>
-                                        Deep Research on Life
-                                </p>
-                            
-                                <ul>
-                                        <li>Survived</li>
-                                        <li>Lost</li>
-                                        <li>Will Win</li>
-                                </ul>
-                            
-                            </section>
-                            
-                        </article>
-
-                </main>
-
-        </body>
-
+            <h3>Gandhi Institute of Technology and Management</h3>
+            <p><i>Bachelor of Technology in Computer Science Engineering</i></p>
+            <p><i>Aug. 2019 - April 2023 | Hyderabad</i></p>
+            <ul>
+                <li>Demonstrated strong collaboration and leadership by assisting professors and peers in academic projects, research, and organizing reading sessions and conferences.</li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>
